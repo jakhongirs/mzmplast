@@ -5,3 +5,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+
+@media only screen and (max-width: 1020px){
+  .container{
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (max-width: 750px){
+  .container{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
