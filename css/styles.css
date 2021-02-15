@@ -1087,4 +1087,108 @@ img {
     margin-bottom: 29px;
   }
 }
+
+.advantages__container {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.advantages__heading {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.advantages__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: -10px;
+  list-style: none;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  max-width: 286px;
+  margin: 10px;
+}
+
+.advantages__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-style: 28px;
+  font-weight: bold;
+}
+
+.advantages__title::before {
+  content: "";
+  min-width: 48px;
+  min-height: 48px;
+  margin-bottom: 10px;
+  background-image: url("../img/check-square.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.advantages__description {
+  margin: 0;
+  color: #858A8F;
+}
+
+@media only screen and (max-width: 978px) {
+  .advantages__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: -20px;
+  }
+  .advantages__item {
+    margin: 20px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .advantages__container {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  .advantages__heading {
+    margin-bottom: 25px;
+    font-size: 25px;
+  }
+  .advantages__item {
+    max-width: 90%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
