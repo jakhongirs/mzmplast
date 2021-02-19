@@ -1,0 +1,133 @@
+.site-footer{
+  background-color: $main-color;
+}
+
+.site-footer__container{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site-footer__left{
+  display: flex;
+  flex-direction: column;
+  max-width: 180px;
+}
+
+.site-footer__center{
+  display: flex;
+  align-items: flex-start;
+}
+
+.site-footer__social-list{
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-top: auto;
+  list-style: none;
+}
+
+.site-footer__social-item + .site-footer__social-item{
+  margin-left: 15px;
+}
+
+.site-footer__social-link{
+  display: inline-block;
+}
+
+.site-footer__social-icon{
+  color: #fff;
+  transition: color 0.3s ease;
+  
+  &:hover{
+    color: $orange-color;
+  }
+}
+
+.site-footer__list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__item + .site-footer__item{
+  margin-top: 8px;
+}
+
+.site-footer__link{
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  
+  &:hover{
+    color: $orange-color;
+  }
+}
+
+.site-footer__list-second-row{
+  margin-left: 60px;
+}
+
+.site-footer__right{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.site-footer__button{
+  background-color: #fff;
+  color: $main-color;
+
+  &:hover{
+    background-color: $orange-color;
+    color: #fff;
+  }
+}
+
+.site-footer__right-text{
+  margin: 0;
+  margin-top: auto;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 925px){
+  .site-footer__container{
+    flex-wrap: wrap;
+  }
+}
+
+
+@media only screen and (max-width: 697px){
+  .site-footer__container{
+    justify-content: left;
+  }
+
+  .site-footer__center{
+    margin-left: auto;
+  }
+
+  .site-footer__right{
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .site-footer__button{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 430px){
+  .site-footer__center{
+    margin: 0;
+  }
+
+  .site-footer__social-list{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

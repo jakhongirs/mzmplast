@@ -48,6 +48,7 @@
 
 .sitenav__button{
   display: inline-block;
+  white-space: nowrap;
   text-decoration: none;
   color: #fff;
   background-color: $orange-color;
